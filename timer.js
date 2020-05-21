@@ -28,13 +28,16 @@ function updateTimeDown(hours, minutes, seconds) {
     //console.log("Down:" + minutes + ":" + seconds);
     document.getElementById("minutes-down").innerText = minutes;
     document.getElementById("seconds-down").innerText = seconds;
-    /*
-    if (seconds == -1) {
+    
+    if (minutes == -60) {
         for (i = 0; i < 100; i++) {
             window.clearInterval(i);
+            document.getElementById("count-down-timer").innerText = "";
+            document.getElementById("seconds-down").innerText="00";
+            document.getElementById("minutes-down").innerText="00";
         }
     }
-    */
+
     return ({
         hours,
         minutes,

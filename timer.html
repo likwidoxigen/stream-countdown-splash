@@ -20,34 +20,37 @@
                <div class="timer-header"></div>
                <div class="minutes-area">
                   <h1 id="minutes-down" onClick="">0</h1>
-               </div>
+               </div>  <!-- Minutes-area-->
                <div class="seconds-area">
                   <h1 id="seconds-down">0</h1>
-               </div>
+               </div> <!-- seconds-area-->
                <div class="minutes-label">
                   <h2>Minutes</h2>
-               </div>
+               </div>  <!-- minutes-label-->
                <div class="seconds-label">
                   <h2>Seconds</h2>
                </div>
-            </div>
-            </div>
-            </div>
+            </div>  <!-- grid-container-->
+            </div> <!-- sizeit-->
+            </div>  <!-- fullWidthTitle-->
             <div class="separator"></div>
-         </div>
+         </div><!-- backgroundImageDIV-->
          <div></div>
          <div class = "controls">
             <h3>Configuration</h3>
             <label for="totalMinutes">Minutes:</label>
             <input id="totalMinutes" type="text" placeholder="" value ="5"  size ="1"/>
-            <label for="down-timer-label">Count Down Timer Label</label>
+            <br/>
+            <label for="down-timer-label">Timer Label</label>
             <input id="down-timer-label" type="text" placeholder="Be back in:" value ="Be Back in:"  size ="12"/>
+            <br/>
             <label for="late-message">Late Message</label>
-            <input id="late-message" type="text" placeholder="" value="Sorry! Running a bit late!"  size ="12"/>
-            <input id="startTimer" type="button" value="start" onclick="runTimer();" />
+            <input id="late-message" type="text" placeholder="" value="Sorry! Running a bit late!"  size ="18"/>
+            <br/>
+            <input id="startTimer" type="button" value="Start" onclick="runTimer();" />
             <input id="stopTimer" type="button" value="Stop" onclick="stopTimer();" />
-         </div>
-      </div>
+         </div> <!-- Controls-->
+      </div> <!-- Holder-->
       <script type="text/javascript" src="./timer.js"></script>
    </body>
 
