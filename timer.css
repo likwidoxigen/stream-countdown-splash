@@ -1,0 +1,105 @@
+body {
+	overflow:hidden;
+ }
+ 
+ .backgroundImageDIV {
+ background-image:url("assets/BG.jpg");
+	/*this option isn't bad but 100vw also works instead of auto if you have the right kind of background where dimensions aren't critical*/
+	background-size:auto 100vh;
+	background-repeat: no-repeat;
+	/*
+ 	background:rgb(0,0,0,.5);
+ 	padding-top:25vh;*/
+ }
+ 
+ 
+ .fullWidthTitle {
+ text-align: center;
+ background:rgb(0,0,0,.5);
+ padding-top:25vh;
+ padding-right:5vh;
+ }
+
+.holder {
+	overflow:auto;
+	position:absolute;
+	height: 100vh;
+	width: 105vw
+}
+html, body, .grid-container {
+     margin: 0;
+     padding: 0;
+     font-family: 'Exo', sans-serif;
+     font-weight: 300;
+     width: 100%;
+     font-size:1.3rem;
+}
+ h1, h2 {
+     font-weight: 300;
+     margin:0;
+     padding:0;
+     color:white;
+}
+ .sizeit {
+     margin: 0;
+     padding:0;
+     width: 500px;
+     height: 100vh;
+     margin-left:auto;
+     margin-right:auto;
+}
+ .grid-container {
+     display: grid;
+     text-align: center;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     grid-template-rows: 1fr 1fr 1fr;
+     gap: 1px 1px;
+     /*removed header template area*/
+     /*"timer-header timer-header timer-header timer-header"*/
+     grid-template-areas:  "minutes-area minutes-area seconds-area seconds-area" "minutes-label minutes-label seconds-label seconds-label";
+}
+/*
+ .timer-header {
+     grid-area: timer-header;
+    text-align: center;
+     padding:0;
+     margin:0;
+}*/
+ .minutes-area {
+     grid-area: minutes-area;
+    text-align: center;
+    padding:0;
+     margin:0;
+}
+ .seconds-area {
+     grid-area: seconds-area;
+     text-align: center;
+    padding:0;
+     margin:0;
+    vertical-align:top;
+}
+ .minutes-label {
+     grid-area: minutes-label;
+    text-align: center;
+     padding:0;
+     margin:0;
+    padding:0;
+     margin:0;
+    vertical-align:top;
+}
+ .seconds-label {
+     grid-area: seconds-label;
+    text-align: center;
+    padding:0;
+     margin:0;
+    vertical-align:top;
+}
+/* For presentation only, no need to copy the code below */
+/*
+ .grid-container * {
+     border: 1px solid red;
+     position: relative;
+     text-align: center;
+}
+*/
+ 

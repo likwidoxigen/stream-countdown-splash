@@ -1,0 +1,54 @@
+
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Timers</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link href="https://fonts.googleapis.com/css2?family=Exo:wght@200;300;400&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="timer.css">
+   </head>
+   <body>
+      <div class="holder">
+      <div class="backgroundImageDIV">
+      <div class = "fullWidthTitle">
+      <H1 id="count-down-timer">Starting soon!</h1>
+         <div class="sizeit">
+            <div class="grid-container">
+               <div class="timer-header"></div>
+               <div class="minutes-area">
+                  <h1 id="minutes-down" onClick="">0</h1>
+               </div>
+               <div class="seconds-area">
+                  <h1 id="seconds-down">0</h1>
+               </div>
+               <div class="minutes-label">
+                  <h2>Minutes</h2>
+               </div>
+               <div class="seconds-label">
+                  <h2>Seconds</h2>
+               </div>
+            </div>
+            </div>
+            </div>
+            <div class="separator"></div>
+         </div>
+         <div></div>
+         <div class = "controls">
+            <h3>Configuration</h3>
+            <label for="totalMinutes">Minutes:</label>
+            <input id="totalMinutes" type="text" placeholder="" value ="5"  size ="1"/>
+            <label for="down-timer-label">Count Down Timer Label</label>
+            <input id="down-timer-label" type="text" placeholder="Be back in:" value ="Be Back in:"  size ="12"/>
+            <label for="late-message">Late Message</label>
+            <input id="late-message" type="text" placeholder="" value="Sorry! Running a bit late!"  size ="12"/>
+            <input id="startTimer" type="button" value="start" onclick="runTimer();" />
+            <input id="stopTimer" type="button" value="Stop" onclick="stopTimer();" />
+         </div>
+      </div>
+      <script type="text/javascript" src="./timer.js"></script>
+   </body>
+
+</html>
