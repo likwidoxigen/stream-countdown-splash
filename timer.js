@@ -54,6 +54,9 @@ function updateTimer() {
 }
 
 function runTimer() {
+    if (timerInterval) {
+        stopTimer();
+    }
     document.getElementById("minutes-down").innerText = document.getElementById("totalMinutes").value;
     document.getElementById("count-down-timer").innerText = document.getElementById("down-timer-label").value;
     minutesDown = document.getElementById("minutes-down").innerText;
