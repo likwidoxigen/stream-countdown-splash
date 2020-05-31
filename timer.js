@@ -51,6 +51,11 @@ function updateTimer() {
     hoursDown = returnedTime.hours;
     minutesDown = returnedTime.minutes;
     secondsDown = returnedTime.seconds;
+    if (minutesDown == 0 && secondsDown == 0) {
+        stopTimer();
+        document.getElementById("totalMinutes").value =0;
+        setTimeout(runTimer, document.getElementById("grace-period").value * 1000);
+    } 
 }
 
 function runTimer() {

@@ -40,13 +40,16 @@
             <h3>Configuration</h3>
             <label for="totalMinutes">Minutes:</label>
             <input id="totalMinutes" type="text" placeholder="" value ="5"  size ="1"/>
-            <br/>
+            <br>
             <label for="down-timer-label">Timer Label</label>
-            <input id="down-timer-label" type="text" placeholder="Be back in:" value ="Be Back in:"  size ="12"/>
-            <br/>
+            <input id="down-timer-label" type="text" placeholder="Starting Soon!" value ="Starting Soon!"  size ="12"/>
+            <br>
+            <label for="grace-period">Grace Period in Seconds</label>
+            <input id="grace-period" type="text" placeholder="" value="10"  size ="1"/>
+            <br>
             <label for="late-message">Late Message</label>
             <input id="late-message" type="text" placeholder="" value="Sorry! Running a bit late!"  size ="18"/>
-            <br/>
+            <br>
             <input id="startTimer" type="button" value="Start" onclick="runTimer();" />
             <input id="stopTimer" type="button" value="Stop" onclick="stopTimer();" />
          </div> <!-- Controls-->
